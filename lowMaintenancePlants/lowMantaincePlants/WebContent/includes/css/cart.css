@@ -1,0 +1,201 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Container for Cart */
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 8rem; /* Adjust padding to fit below the header */
+
+}
+
+/* Total Price Section */
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f4f4f9;
+    border: 1px solid #048011;
+    border-radius: 5px;
+}
+
+.total-price h3 {
+    margin: 0;
+}
+.checkout-button a {
+    text-decoration: none;
+}
+.checkout-button a:hover {
+    color: inherit; /* Prevent color change on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+.btn-checkout {
+    text-decoration: none;
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn-checkout:active {
+    background-color: #006000;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: separate; /* Use separate border model to allow rounded corners */
+    border-spacing: 0;
+    border: 2px solid #048011; /* Adjust the border color as needed */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #F4FFF7; /* Ensure the border-radius works by clipping the content inside */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.table thead th {
+    background: #048011;
+    color: #fff; /* Ensure the text color contrasts well with the background */
+    padding: 8px;
+    text-align: left;
+    border-right: 1px solid #919191;
+}
+
+
+]
+.table th, .table td {
+    border: 1px solid #919191;
+    padding: 8px;
+    text-align: left;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #F4FFF7;
+}
+
+.table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.table thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+/* Quantity Control Styles */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; 
+}
+
+.quantity-control a {
+    text-decoration: none;
+    font-size: 18px;
+    width: 30px; /* Adjust the width to make the button circular */
+    height: 30px; /* Ensure height matches width for a perfect circle */
+    line-height: 30px; /* Center the text vertically */
+    padding: 0; /* Remove padding to make it circular */
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    margin: 0 5px;
+    color: #000;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 50%; /* Make the button perfectly round */
+    display: inline-flex; /* Ensure proper alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.quantity-control a:hover {
+    background-color: #a2f5a2; /* Darker shade on hover */
+    transform: scale(1.1); /* Slight scaling on hover */
+}
+
+.quantity-control input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    /* Optional: Add some padding to the input for better appearance */
+    padding: 5px;
+    border-radius: 5px; /* Optional: Rounded corners for the input */
+}
+
+
+
+/* Button Styles */
+/* Adjust padding for the button */
+
+/* Style the heart icon */
+/* Style the heart icon button */
+.h-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.fa-heart {
+    /* Assuming .fa-heart is the class for your heart icon */
+    margin-left: 80px; /* Push the heart icon to the right */
+}
+.h-btn:hover {
+    transform: scale(1.1); /* Slight scaling on hover */
+}
+
+.h-btn:focus {
+    outline: none; /* Remove outline on focus (optional) */
+}
+
+/* Style the heart icon inside the button */
+.h-btn i {
+    color: red; /* Make the heart icon red */
+    font-size: 24px; /* Adjust icon size */
+}
+
+/* Style the Remove button */
+
+.btn-remove {
+    display: flex;
+    justify-content: center; /* Center contents horizontally */
+    align-items: center; /* Center contents vertically */
+    height: 100%; /* Ensure the button takes up full height of the cell */
+}
+
+.r-btn {
+    /* Optionally, you can use flex properties for alignment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-remove a {
+    background-color: red;
+    color: #fff;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 14px;
+}
+
+
